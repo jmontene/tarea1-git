@@ -116,7 +116,18 @@
           repo', 'dirty working tree' y 'merge conflict'.
         </h3>
         <div class="answer">
-          Coloca tus respuestas aquí.
+         +working directory: Es el directorio local en que se modifican los archivos para luego pasarlos
+          a staging via commit
+         +index: Tambien llamado staging area, es un archivo que contiene los cambios que seran agregados
+          en el proximo commit
+         +local repo: Repositorio donde se guardan y manejan todos los commits hechos localmente en el
+          proyecto
+         +remote repo: Repositorio remoto al cual se pueden pushear los commits hechos en el repo local
+          usando git push
+         +dirty working tree: Asi se le dice al working directory cuando tiene modificaciones que aun no
+          se han agregado al index
+         +merge conflict: Ocurre cuando se trata de hacer merge de dos branches que contiene cambios 
+          conflictivos. Para poder hacer commit de estos cambios, se debe resolver dicho conflicto
         </div>
       </article>
       <article id="q4">
@@ -146,19 +157,19 @@
             <tbody>
               <tr>
                 <th scope="row">working dir</th>
+                <td>R</td>
                 <td></td>
+                <td>R</td>
                 <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>R/W</td>
                 <td></td>
                 <td></td>
               </tr>
               <tr>
                 <th scope="row">index</th>
+                <td>R</td>
                 <td></td>
-                <td></td>
-                <td></td>
+                <td>R/W</td>
                 <td>R/W</td>
                 <td></td>
                 <td></td>
@@ -167,21 +178,21 @@
               <tr>
                 <th scope="row">local repo</th>
                 <td></td>
-                <td></td>
-                <td></td>
                 <td>W</td>
                 <td></td>
-                <td></td>
-                <td></td>
+                <td>W</td>
+                <td>R/W</td>
+                <td>R</td>
+                <td>R/W</td>
               </tr>
               <tr>
                 <th scope="row">remote repo</th>
                 <td></td>
+                <td>R</td>
                 <td></td>
                 <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>R</td>
+                <td>R/W</td>
                 <td></td>
               </tr>
             </tbody>
