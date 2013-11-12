@@ -8,7 +8,7 @@ for line in d:
    if any((c in letters) for c in line):
       for ch in line:
          if cur > 0:
-            if ch in letters and ch == line[cur - 1]:
+            if ch == line[cur - 1]:
               letters = letters.replace(ch,"")
          cur = cur + 1
 
